@@ -1,0 +1,109 @@
+.todoList {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 0 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 700px; 
+}
+
+.todoList li {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
+}
+
+.todoList-user {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(164, 164, 164);
+    border-radius: 8px;
+    
+}
+
+.todoList-user-field {
+    margin-right: 1rem;
+    width: 100%;
+}
+
+.todoList-user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.todoList-username {
+    font-weight: bold;
+    margin-bottom: 0;
+    color: black;
+    text-align: start;
+}
+
+.todoList-user-email {
+    font-size: .875rem;
+    margin-top: 0;
+    color: #aaa;
+}
+
+.todoList-empty {
+    text-align: center;
+    padding: 1rem;
+    color: black;
+}
+
+.todoList-user-delete {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2px;
+    width: 60px;
+}
+
+.todoList-item{
+    text-align: start;
+    color: black;
+}
+
+.todoList-user-delete:hover {
+    background-color: #e74c3c;
+}
+
+.todoList li.user-sent {
+    align-self: flex-end;
+}
+
+.todoList li:not(.user-sent) {
+    align-self: flex-start;
+}
+
+.time{
+    text-align: end;
+    color: black
+}
+
+.todoList-user-edit{
+    background-color: #ADD8E6;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2px;
+    width: 60px;
+}
+
+.todoList-user-edit:hover {
+    background-color: #0099ff;
+}
